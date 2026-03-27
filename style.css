@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.title {
+  display: block;
+  text-align: center;
+}
+
+.title h1 {
+  color: antiquewhite;
+  padding: 10px;
+}
+
+.title h5 {
+  color: #95ae49;
+}
+
+.description {
+  color: #9a9a9a;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.social-links li {
+  text-align: center;
+  list-style: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.social-links a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: antiquewhite;
+  background-color: #333333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 375px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title h1 {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+}
